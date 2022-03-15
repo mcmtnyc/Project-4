@@ -10,13 +10,16 @@ A reaction time game. Click randomized buttons in order and compete by completio
 
 ### Executing program
 
-* How to Start the Game
+* How to Start the Game *
+
 Click the Start Button, the game starts immediately
 
-* How to Play
+* How to Play *
+
 Click Numbers in the numerical order, until all buttons are clicked.
 
-* How to Reset the Game
+* How to Reset the Game *
+
 Click the reset button or refresh the page.
 
 ## Authors
