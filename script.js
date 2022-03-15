@@ -4,10 +4,10 @@ let gameButtonStart = document.querySelector(".gameButtonStart")
 let alert = document.querySelector(".alert")
 let gridBox = document.querySelector(".gridBox")
 let boardElements = document.querySelectorAll(".gridBox")
-let gamestate = "playing"
+let gamestate = true
 let prevClick = 0
 
-/// HARD CODE ARRAY UNTIL BELOW SOLUTION
+
 let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 let shuffleNumArray = numArray.sort(() => Math.random() - 0.5)
 function fillButtons() {
@@ -19,15 +19,6 @@ function fillButtons() {
   }
 }
 
-
-
-
-
-
-
-
-
-
 function buttonClick(event) {
   let currButton = event.target
   currClick = Number(currButton.innerHTML)
@@ -37,7 +28,18 @@ function buttonClick(event) {
     prevClick = currClick
     console.log("prev click" + prevClick)
   }
-  if (boardElements.every(buttonIsDisabled)) {
+
+  let gameResults = []
+
+  boardElements.forEach((btn) => {
+    gameResults.push(btn.disabled)
+  })
+
+  let boardTrue = gameResults.some((game) => {
+    return !game
+  })
+
+  if (!boardTrue) {
     endGame()
   }
 }
@@ -63,15 +65,6 @@ function hitResetButton() {
   })
 }
 
-/// Iterate thru to create buttons w randomized numbers... FIND WAY TO GET NO REPEATS
-// function getRandomInt(min, max) {
-//   min = Math.ceil(min);
-//   max = Math.floor(max);
-//   return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
 
-// let numArray = []
-// let arrayLength = 16
-// for (let i = 0; i < arrayLength; i++){
 
-//   numArray.push(getRandomInt(1,arrayLength))
+////
