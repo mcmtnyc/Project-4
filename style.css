@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-rows: 60px 60px 60px 60px;
+  grid-template-columns: 60px 60px 60px 60px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.gridBox {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60px;
+height: 60px;
+}
+
+.gameButton {
+  width: 30%;
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
