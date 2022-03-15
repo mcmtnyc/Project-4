@@ -2,27 +2,55 @@
   display: grid;
   grid-template-rows: 60px 60px 60px 60px;
   grid-template-columns: 60px 60px 60px 60px;
+  padding-top: 15px;
+}
+
+.logo {
+  max-width: 10%;
+  display: inline;
+}
+
+.page-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: 	
+  #ffcc00;
+}
+.page-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: 	
+  #ffcc00;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .gridBox {
-display: flex;
+display: block;
 align-items: center;
 justify-content: center;
 width: 60px;
 height: 60px;
+font-family: 'Fredoka', sans-serif;
 }
 
 .gameButton {
   width: 30%;
-  display: inline;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 15px;
+}
+
+#stopwatch {
+  padding-bottom: 15px;
+}
+
+.gameButtonRestart {
+  margin-bottom: 15px;
 }
