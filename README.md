@@ -1,6 +1,6 @@
 # Project 4
 
-Simple browser game
+Simple browser game - NUMBOARD >>> mcmtnyc.github.io
 
 ## Description
 
@@ -21,6 +21,10 @@ Click Numbers in the numerical order, until all buttons are clicked.
 * How to Reset the Game *
 
 Click the reset button or refresh the page.
+
+## Dependencies and Tools
+
+Made using HTML, Javascript, CSS.
 
 ## Authors
 
