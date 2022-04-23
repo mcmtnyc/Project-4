@@ -1,4 +1,3 @@
-/// Variables
 let resetButton = document.querySelector(".gameButtonRestart")
 let gameButtonStart = document.querySelector(".gameButtonStart")
 let alert = document.querySelector(".alert")
